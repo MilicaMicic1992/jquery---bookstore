@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+crossorigin="anonymous">
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css />
+
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+
+  <link rel="stylesheet" href="./style.css">
+
+    <title>Bookstore</title>
+
+</head>
+<body>
+<div class="container">
+    <header class="header-container header-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <img height="120"
+                 src="./images/bookhouse_logo.png"
+                 alt="bookhouse_logo">
+            </div>      
+        <div class="col-md-4">
+        <ul class="nav flex-column p-2">
+            <li class="nav-item text-end lh-lg">
+              <a href="#">Sign in</a> / 
+              <a href="#">Register</a>
+            </li>
+            <li class="nav-item text-end lh-lg">
+              <a href="#">
+                <i class="fas fa-shopping-cart"> </i>Your cart (0)
+              </a>
+            </li>
+            <li class="nav-item text-end lh-lg">
+              <a href="#help-tooltip" rel="modal:open">
+                <i class="fas fa-open-question-circle"></i>Need help?
+              </a>
+            </li>
+          </ul>
+        </div>
+
+    </header>
+    <main>
+        <div class="bxslider">         
+              <div >
+                <img src="./images/slider_agathachristie.jpg" class="img-fluid">
+              </div>
+              <div >
+                <img src="./images/slider_ascendanceofabookworm.jpg" class="img-fluid">
+              </div>
+              <div>
+                <img src="./images/slider_dansimmons.jpg" class="img-fluid">
+              </div>
+        </div> 
+        <div class="container-fluid">
+            <h2>Featured releases</h2>
+            <div class="row">
+                <div class="col-md-4">
+                        <div class="card text-center">
+                          <div class="card-header category_ln">Light novel</div>
+                          <div class="card-body">
+                            <h5 class="card-title">Ascendance of a Bookworm VOL 1</h5>
+                            <div>
+                              <img
+                                class="img-fluid"
+                                src="./images/cover_ascendance_vol1.jpg"
+                              />
+                            </div>
+                            <p class="card-text">
+                              <a href="#">Miya Kazuki</a> (Author),
+                              <a href="#">You Shiina</a> (Illustrator),
+                              <a href="#">quof</a> (Translator)
+                            </p>
+                            <a
+                              href="#bookworm-modal"
+                              class="btn btn-primary"
+                              rel="modal:open"
+                            >
+                              <i class="fas fa-eye"></i> Details
+                            </a>
+                            <a href="#" class="btn btn-success">
+                              <i class="fas fa-cart-plus"></i> Add to cart
+                            </a>
+                          </div>
+                          <div class="card-footer text-muted">
+                            <b>Category:</b>
+                            <a class="badge rounded-pill bg-primary" href="#"
+                              >Light novel</a
+                            >
+                            <a class="badge rounded-pill bg-primary" href="#">Fantasy</a>
+                            <a class="badge rounded-pill bg-primary" href="#">Isekai</a>
+                          </div>
+                        </div>
+                        <!-- end card -->
+                      </div>
+                      <!-- end col-md-4-->
+               
+                <div class="col-md-4">
+                    <div class="card text-center">
+                      <div class="card-header category_novel">Novel</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Murder on the Orient Express</h5>
+                        <div>
+                          <img
+                            class="img-fluid"
+                            src="./images/cover_murder_orient_express.jpg"
+                          />
+                        </div>
+                        <p class="card-text">
+                          <a href="#">Agatha Christie</a> (Author)
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                          <i class="fas fa-eye"></i> Details
+                        </a>
+                        <a href="#" class="btn btn-success">
+                          <i class="fas fa-cart-plus"></i> Add to cart
+                        </a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <b>Category:</b>
+                        <a class="badge rounded-pill bg-primary" href="#">Crime</a>
+                        <a class="badge rounded-pill bg-primary" href="#">Drama</a>
+                        <a class="badge rounded-pill bg-primary" href="#">Fiction</a>
+                      </div>
+                    </div>
+                    <!-- end card -->
+                  </div>
+                  <!-- end col-md-4-->
+                  <div class="col-md-4">
+                    <div class="card text-center">
+                      <div class="card-header category_novel">Novel</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Hyperion</h5>
+                        <div>
+                          <img class="img-fluid" src="./images/cover_hyperion.jpg" />
+                        </div>
+                        <p class="card-text"><a href="#">Dan Simmons</a> (Author)</p>
+                        <a href="#" class="btn btn-primary">
+                          <i class="fas fa-eye"></i> Details
+                        </a>
+                        <a href="#" class="btn btn-success">
+                          <i class="fas fa-cart-plus"></i> Add to cart
+                        </a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <b>Category:</b>
+                        <a class="badge rounded-pill bg-primary" href="#">Fantasy</a>
+                        <a class="badge rounded-pill bg-primary" href="#">Drama</a>
+                        <a class="badge rounded-pill bg-primary" href="#">Sci-Fi</a>
+                      </div>
+                    </div>
+                    <!-- end card -->
+                  </div>
+                  <!-- end col-md-4-->
+                </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+<script src="./js/jquery.leanModal.min.js"></script>
+<script>
+    $(".bxslider").bxSlider({
+      mode: "horizontal",
+      speed: 1000,
+      captions: false,
+      controls: false,
+      auto: true,
+      pager: false,
+      pause: 8000,
+    });
+    $('[rel="modal:open"]').leanModal({ closeButton: ".close-modal" });
+  </script>
+</body>
+</html>
